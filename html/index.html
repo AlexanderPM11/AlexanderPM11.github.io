@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index1.css">
+    <title>Game memory</title>
+</head>
+<script>
+    arays_img=["/img/amadis.jpg","/img/caro.jpg","/img/goku.jpg","/img/itla.png","/img/Juan_pablo_duarte_diez.jpg","/img/yo.jpeg",
+"/img/amadis.jpg","/img/caro.jpg","/img/goku.jpg","/img/itla.png","/img/Juan_pablo_duarte_diez.jpg","/img/yo.jpeg"]
+
+arays_img=arays_img.sort(function(){
+    return Math.random()-0.5
+});
+</script>
+<body>
+    <h1 class="title">Memory</h1>
+    <div class="cont_Messa">
+        <p class="mesaje_ganado">Haz ganado! Felicidades</p>
+        <p class="mesaje_perdio">Haz perdido!! Vuelva a intentar</p>
+    </div>
+    <table class="table">
+        <tr class="tr_table">
+            <td id="1"><script>document.write(`<img src=${arays_img[0]} class="img_td" id="img1">`)</script></td>
+            <td id="2"><script>document.write(`<img src=${arays_img[1]} class="img_td" id="img2">`)</script></td>
+            <td id="3"><script>document.write(`<img src=${arays_img[2]} class="img_td" id="img3">`)</script></td>
+            <td id="4"><script>document.write(`<img src=${arays_img[3]} class="img_td" id="img4">`)</script></td>
+        </tr>
+        <tr class="tr_table">
+            <td id="12"><script>document.write(`<img src=${arays_img[4]} class="img_td" id="img12">`)</script></td>
+            <td id="5"><script>document.write(`<img src=${arays_img[5]} class="img_td" id="img5">`)</script></td>
+            <td id="6"><script>document.write(`<img src=${arays_img[6]} class="img_td" id="img6">`)</script></td>
+            <td id="7"><script>document.write(`<img src=${arays_img[7]} class="img_td"  id="img7">`)</script></td>
+        </tr>
+        <tr class="tr_table">
+            <td id="8"><script>document.write(`<img src=${arays_img[8]} class="img_td" id="img8">`)</script></td>
+            <td id="9"><script>document.write(`<img src=${arays_img[9]} class="img_td" id="img9">`)</script></td>
+            <td id="10"><script>document.write(`<img src=${arays_img[10]} class="img_td" id="img10">`)</script></td>
+            <td id="11"><script>document.write(`<img src=${arays_img[11]} class="img_td" id="img11">`)</script></td> 
+        </tr>
+        
+    </table> 
+    <div class="contButton">
+        <button type="button" onclick="reiniciar()" class="btn btn-primary">Reiniciar</button> 
+    </div>
+    
+    <script src="/javascript/index1.js"></script>
+</body>
+</html>
+
